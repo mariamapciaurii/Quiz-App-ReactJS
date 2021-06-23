@@ -1,10 +1,10 @@
 import axios from "axios";
 import { useState } from "react";
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import {Home} from "./Pages/Home/Home";
-import {Quiz} from "./Pages/Quiz/Quiz";
-import {Result} from "./Pages/Result/Result";
+import { Home } from "./Pages/Home/Home";
+import { Quiz } from "./Pages/Quiz/Quiz";
+import { Result } from "./Pages/Result/Result";
 
 function App() {
   const [name, setName] = useState("")
@@ -13,8 +13,7 @@ function App() {
 
   const fetchQuestions = async (category = "", difficulty = "") => {
     const { data } = await axios.get(
-      `https://opentdb.com/api.php?amount=10${
-        category && `&category=${category}`
+      `https://opentdb.com/api.php?amount=10${category && `&category=${category}`
       }${difficulty && `&difficulty=${difficulty}`}&type=multiple`
     );
 
@@ -22,17 +21,17 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
-    <div className="App">
-    <Switch>
-          <Route path="/Quiz-App-ReactJs" exact>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/" exact>
             <Home
               name={name}
               setName={setName}
               fetchQuestions={fetchQuestions}
             />
           </Route>
-          <Route path="/Quiz-App-ReactJs/quiz">
+          <Route path="/quiz">
             <Quiz
               name={name}
               questions={questions}
@@ -41,19 +40,17 @@ function App() {
               setQuestions={setQuestions}
             />
           </Route>
-          <Route path="/Quiz-App-ReactJs/result">
-            <Result 
+          <Route path="/result">
+            <Result
             // name={name} score={score} 
             />
           </Route>
         </Switch>
-     
-     </div>
 
+      </div>
 
+    </Router>
 
-    </BrowserRouter>
-    
   );
 }
 
