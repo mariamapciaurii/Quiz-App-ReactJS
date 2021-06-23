@@ -24,14 +24,14 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route path="/Quiz-App-ReactJs" exact>
+          <Route path="/" exact>
             <Home
               name={name}
               setName={setName}
               fetchQuestions={fetchQuestions}
             />
           </Route>
-          <Route path="/Quiz-App-ReactJs/quiz">
+          <Route path="/quiz">
             <Quiz
               name={name}
               questions={questions}
@@ -40,7 +40,7 @@ function App() {
               setQuestions={setQuestions}
             />
           </Route>
-          <Route path="/Quiz-App-ReactJs/result">
+          <Route path="/result">
             <Result
             // name={name} score={score} 
             />
