@@ -1,0 +1,34 @@
+
+.Quiz-content{
+    min-height: 450px;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+}
+  .Quiz-content__title{
+    margin-left: 42px;
+    font-size: 30px;;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+
+}
+
+  /* @media (max-width: 800px) {
+    .Quiz-content {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    
+    .Quiz-content__title {
+      width: 100%;
+    }
+} */
+
+.Quiz-content__select{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  flex: 0.8;
+  justify-content: space-evenly;
+}
