@@ -3,7 +3,7 @@ import { useState } from "react";
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import { Home } from "./Pages/Home/Home";
-import { Quiz } from "./Pages/Quiz/Quiz";
+import  Quiz  from "./Pages/Quiz/Quiz";
 import { Result } from "./Pages/Result/Result";
 
 function App() {
