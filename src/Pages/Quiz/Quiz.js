@@ -8,7 +8,6 @@ const Quiz = ({ name, questions, score, setScore, setQuestions }) => {
   const [currQues, setCurrQues] = useState(0);
 
   useEffect(() => {
-    console.log("hahah")
     setOptions(
       questions &&
         handleShuffle([
