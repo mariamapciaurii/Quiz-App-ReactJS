@@ -25,14 +25,14 @@ function App() {
     <BrowserRouter>
     <div className="App">
     <Switch>
-          <Route path="/" exact>
+          <Route path="/Quiz-App-ReactJs" exact>
             <Home
               name={name}
               setName={setName}
               fetchQuestions={fetchQuestions}
             />
           </Route>
-          <Route path="/quiz">
+          <Route path="/Quiz-App-ReactJs/quiz">
             <Quiz
               name={name}
               questions={questions}
@@ -41,7 +41,7 @@ function App() {
               setQuestions={setQuestions}
             />
           </Route>
-          <Route path="/result">
+          <Route path="/Quiz-App-ReactJs/result">
             <Result 
             // name={name} score={score} 
             />
