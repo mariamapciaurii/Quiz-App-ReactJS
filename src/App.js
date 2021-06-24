@@ -31,6 +31,7 @@ function App() {
               fetchQuestions={fetchQuestions}
             />
           </Route>
+
           <Route path="/quiz">
             <Quiz
               name={name}
@@ -40,9 +41,10 @@ function App() {
               setQuestions={setQuestions}
             />
           </Route>
+          
           <Route path="/result">
             <Result
-            // name={name} score={score} 
+            name={name} score={score} 
             />
           </Route>
         </Switch>

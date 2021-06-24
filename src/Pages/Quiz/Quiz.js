@@ -31,7 +31,7 @@ const Quiz = ({ name, questions, score, setScore, setQuestions }) => {
           <div className="Quiz-container__info">
             <span>{questions[currQues].category}</span>
             <span>
-              {/* {questions[currQues].difficulty} */}
+              {}
               Score : {score}
             </span>
           </div>
@@ -43,7 +43,6 @@ const Quiz = ({ name, questions, score, setScore, setQuestions }) => {
             correct={questions[currQues]?.correct_answer}
             score={score}
             setScore={setScore}
-            setQuestions={setQuestions}
           />
         </>
       ) : (

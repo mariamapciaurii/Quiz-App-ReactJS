@@ -4,9 +4,9 @@ const ErrorMessage = ({ children }) => {
         style={{
           width: "100%",
           padding: 10,
-          marginBottom: 10,
+          marginTop:25,
+          marginBottom: 8,
           borderRadius: 4,
-          // backgroundColor: "orangered",
           textAlign: "center",
           color: "red",
           textTransform: "capitalize",

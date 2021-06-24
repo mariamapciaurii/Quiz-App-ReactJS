@@ -6,22 +6,28 @@
     justify-content: space-between;
 }
   .Home-content__title{
-    margin-left: 52px;
     font-size: 25px;;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     text-align: center;
-    color: #c6c8cf;
-
+    color: #f50057;
+    padding: 5px 25px;
+    border-radius: 5px;
 }
-
 .Home-content__select{
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   padding: 20px;
   width: 100%;
   flex: 0.8;
   justify-content: space-evenly;
+}
+.Home-content__select button{
+  color: #f50057;
+  border: 1px solid #f50057 ;
+  border-radius: 6px;
+  font-weight: bold;
 }
 .Home-content__select .MuiInputLabel-outlined{
   color: #767c96;

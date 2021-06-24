@@ -12,7 +12,6 @@ const Question = ({
   correct,
   setScore,
   score,
-  setQuestions,
 }) => {
   const [selected, setSelected] = useState();
   const [error, setError] = useState(false);
@@ -42,7 +41,6 @@ const Question = ({
 
   const handleQuit = () => {
     setCurrQues(0);
-    setQuestions();
   };
 
   return (

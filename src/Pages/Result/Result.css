@@ -1,0 +1,11 @@
+.Result-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 60vh;
+}
+.Result-container__title{
+    margin-bottom: 25px;
+    margin-top: 25px;
+}

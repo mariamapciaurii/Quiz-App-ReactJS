@@ -29,7 +29,7 @@ export const Home = ({name,setName, fetchQuestions}) => {
     return (
     <div className="Home-content">
       <div>
-        <span className="Home-content__title">Quiz App </span>
+        <span className="Home-content__title"> React  Quiz App </span>
         {error && <ErrorMessage>Please Fill Information</ErrorMessage>}
         <div className="Home-content__select">
 
