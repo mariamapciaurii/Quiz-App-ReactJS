@@ -25,7 +25,7 @@ export const Result = ({name, score}) => {
             variant="contained"
             size="large"
             style={{ alignSelf: "center", marginTop: 15 }}
-            href="/"
+            href="/Quiz-App-ReactJs"
             >
                 Go to homepage
             </Button>
