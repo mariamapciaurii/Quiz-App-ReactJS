@@ -12,7 +12,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  border: 5px solid grey;
   padding: 20px;
   margin-top: 10px;
 }
@@ -31,8 +30,14 @@
   height: 50px;
   padding: 15px 20px;
   margin: 10px;
-  box-shadow: 0 0 2px black;
-}
+  background-color: #101427;
+  color: white;
+  border: 1px solid #818AB2;
+  border-radius: 15px;
+  cursor: pointer;
+  }
+
+
 
 @media (max-width: 614px) {
   .singleOption {
@@ -52,7 +57,7 @@
   border:none;
 }
 .Questions-container__question h2{
-    font-size: 18px;
+    font-size: 16px;
 }
 .Questions-container h1{
     font-size: 25px;
@@ -68,18 +73,16 @@
   background: #e05955;
 }
 
-.Question-options button{
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-}
+
 .Question-options .select {
   background-color: #189541;
   color: #fff;
+  border: none;
 }
 .Question-options .wrong{
   background: #E1332D;
   color: #fff;
+  border: none;
 }
 
 .Questions-container__controls .MuiButton-containedPrimary{

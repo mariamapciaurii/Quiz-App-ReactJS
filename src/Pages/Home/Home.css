@@ -7,7 +7,7 @@
 }
   .Home-content__title{
     margin-left: 52px;
-    font-size: 30px;;
+    font-size: 25px;;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     text-align: center;
@@ -34,6 +34,9 @@
 
 
  @media (max-width: 667px) {
+   .App{
+     width: 100%;
+   }
     .Home-content {
       flex-direction: column-reverse;
       align-items: center;
