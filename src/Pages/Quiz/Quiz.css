@@ -7,18 +7,27 @@
   
   .Quiz-container__subtitle {
     font-size: 18px;
-    border: 1px solid black;
-    box-shadow: 4px 4px 2px black;
     padding: 5px 10px;
+    margin-bottom: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #c6c8cf;
+
   }
-  
+ 
   .Quiz-container__info {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    text-transform: uppercase;
     margin: 10px;
-    font-size: 18px;
+    font-size: 16px;
+    /* color: #767c96; */
+    color: #c6c8cf;
+  }
+  .question h1{
+    color: #666D91;
+  }
+  .singleQuestion {
+    border:none;
   }
   .singleQuestion h2{
       font-size: 18px;
@@ -26,4 +35,35 @@
   .question h1{
       font-size: 25px;
   }
+  .controls .MuiButton-containedSecondary{
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    background: #E1332D;
+    color: #fff;
+    cursor: pointer;
+  }
+  .controls .MuiButton-containedSecondary:hover{
+    background: #e05955;
+  }  
+  .options button{
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  .options .select {
+    background-color: #189541;
+  }
+  .options .wrong{
+    background: #E1332D;
+  }
   
+  .controls .MuiButton-containedPrimary{
+    border-radius: 5px;
+    background-color: #189541;
+    color: #fff;
+    transition: all 0.2s ease;
+  }
+  .controls .MuiButton-containedPrimary:hover{
+    background: #3da760;
+    color: #fff;
+  }

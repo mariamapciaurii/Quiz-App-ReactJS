@@ -11,6 +11,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     text-align: center;
+    color: #c6c8cf;
 
 }
 
@@ -26,11 +27,10 @@
   color: #767c96;
 }
 .Home-content__select .MuiOutlinedInput-input{
-  color: #fff;
+  color: #c6c8cf;
   font-weight: bold;
   cursor: pointer;
 }
-
 
 
  @media (max-width: 667px) {
