@@ -1,11 +1,11 @@
-.question {
+.Questions-container {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.singleQuestion {
+.Questions-container__question{
   width: 95%;
   min-height: 350px;
   display: flex;
@@ -17,7 +17,7 @@
   margin-top: 10px;
 }
 
-.options {
+.Question-options {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -26,7 +26,6 @@
   justify-content: space-around;
   margin: 10px;
 }
-
 .singleOption {
   width: 46%;
   height: 50px;
@@ -41,20 +40,55 @@
   }
 }
 
-.controls {
+.Questions-container__controls{
   display: flex;
   width: 100%;
   justify-content: space-around;
 }
-
-.select {
-  background-color: rgb(7, 207, 0);
-  color: white;
-  box-shadow: 0 0 1px black;
+.Questions-container h1{
+  color: #666D91;
+}
+.Questions-container__question {
+  border:none;
+}
+.Questions-container__question h2{
+    font-size: 18px;
+}
+.Questions-container h1{
+    font-size: 25px;
+}
+.Questions-container__controls .MuiButton-containedSecondary{
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  background: #E1332D;
+  color: #fff;
+  cursor: pointer;
+}
+.Questions-container__controls .MuiButton-containedSecondary:hover{
+  background: #e05955;
 }
 
-.wrong {
-  background-color: rgb(233, 0, 0);
-  color: white;
-  box-shadow: 0 0 1px black;
+.Question-options button{
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.Question-options .select {
+  background-color: #189541;
+  color: #fff;
+}
+.Question-options .wrong{
+  background: #E1332D;
+  color: #fff;
+}
+
+.Questions-container__controls .MuiButton-containedPrimary{
+  border-radius: 5px;
+  background-color: #189541;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+.Questions-container__controls .MuiButton-containedPrimary:hover{
+  background: #3da760;
+  color: #fff;
 }

@@ -23,47 +23,4 @@
     /* color: #767c96; */
     color: #c6c8cf;
   }
-  .question h1{
-    color: #666D91;
-  }
-  .singleQuestion {
-    border:none;
-  }
-  .singleQuestion h2{
-      font-size: 18px;
-  }
-  .question h1{
-      font-size: 25px;
-  }
-  .controls .MuiButton-containedSecondary{
-    border-radius: 5px;
-    transition: all 0.2s ease;
-    background: #E1332D;
-    color: #fff;
-    cursor: pointer;
-  }
-  .controls .MuiButton-containedSecondary:hover{
-    background: #e05955;
-  }  
-  .options button{
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-  }
-  .options .select {
-    background-color: #189541;
-  }
-  .options .wrong{
-    background: #E1332D;
-  }
   
-  .controls .MuiButton-containedPrimary{
-    border-radius: 5px;
-    background-color: #189541;
-    color: #fff;
-    transition: all 0.2s ease;
-  }
-  .controls .MuiButton-containedPrimary:hover{
-    background: #3da760;
-    color: #fff;
-  }

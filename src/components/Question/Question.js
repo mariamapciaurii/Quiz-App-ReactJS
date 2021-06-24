@@ -46,12 +46,12 @@ const Question = ({
   };
 
   return (
-    <div className="question">
+    <div className="Questions-container">
       <h1>Question {currQues + 1} :</h1>
 
-      <div className="singleQuestion">
+      <div className="Questions-container__question">
         <h2>{questions[currQues].question}</h2>
-        <div className="options">
+        <div className="Question-options">
           {error && <ErrorMessage>{error}</ErrorMessage>}
           {options &&
             options.map((i) => (
@@ -65,7 +65,7 @@ const Question = ({
               </button>
             ))}
         </div>
-        <div className="controls">
+        <div className="Questions-container__controls">
           <Button
             variant="contained"
             color="secondary"
