@@ -1,15 +1,15 @@
 
 .Home-content{
     min-height: 450px;
+    width:100%;
     height: min-content;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
   .Home-content__title{
     font-size: 25px;;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
-    text-align: center;
     color: #f50057;
     padding: 5px 25px;
     border-radius: 5px;

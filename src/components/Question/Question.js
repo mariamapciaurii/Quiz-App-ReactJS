@@ -69,7 +69,7 @@ const Question = ({
             color="secondary"
             size="large"
             style={{ width: 185 }}
-            href="/"
+            href="/Quiz-App-ReactJs"
             onClick={() => handleQuit()}
           >
             Quit
